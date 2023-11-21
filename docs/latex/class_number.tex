@@ -1,0 +1,76 @@
+\hypertarget{class_number}{}\doxysection{Number Class Reference}
+\label{class_number}\index{Number@{Number}}
+
+
+An object that represents the value of an entry, stores the text representation of the number ready to be rendered to the screen.  
+
+
+
+
+{\ttfamily \#include $<$number.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_number_a2ed4b9ae22639d354d5a3c5682d6e96b}\label{class_number_a2ed4b9ae22639d354d5a3c5682d6e96b}} 
+{\bfseries Number} (int n, S\+D\+L\+\_\+\+Texture $\ast$t, int w, int h)
+\item 
+\mbox{\Hypertarget{class_number_a9bb0ff0819564989ba05bba0cb1e8e8d}\label{class_number_a9bb0ff0819564989ba05bba0cb1e8e8d}} 
+{\bfseries Number} (\mbox{\hyperlink{class_number}{Number}} \&\&)=default
+\item 
+\mbox{\Hypertarget{class_number_a55eccbda4c16598c116ba690f8b87514}\label{class_number_a55eccbda4c16598c116ba690f8b87514}} 
+\mbox{\hyperlink{class_number}{Number}} \& {\bfseries operator=} (\mbox{\hyperlink{class_number}{Number}} \&\&)=default
+\item 
+\mbox{\Hypertarget{class_number_a32b8822d40ae8140fa30e792491cc6ca}\label{class_number_a32b8822d40ae8140fa30e792491cc6ca}} 
+{\bfseries Number} (const \mbox{\hyperlink{class_number}{Number}} \&)=default
+\item 
+\mbox{\Hypertarget{class_number_a31bbe22ed8c04ffa95e9162956669cad}\label{class_number_a31bbe22ed8c04ffa95e9162956669cad}} 
+\mbox{\hyperlink{class_number}{Number}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_number}{Number}} \&)=default
+\item 
+void \mbox{\hyperlink{class_number_a71535e7441ba8c8880eaf9bbc9823783}{render}} (S\+D\+L\+\_\+\+Rect bounding\+Box)
+\begin{DoxyCompactList}\small\item\em Renders the number to the screen in the position of the respective entry. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_number_ab7d340a76726865cffa02a6b301cc04b}\label{class_number_ab7d340a76726865cffa02a6b301cc04b}} 
+int {\bfseries get\+Number} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_number_a037d1b1af6f75789eaee7eaf9bf0c2a8}\label{class_number_a037d1b1af6f75789eaee7eaf9bf0c2a8}} 
+int {\bfseries number}
+\item 
+\mbox{\Hypertarget{class_number_aa1974579013d5efce145318b0f8ad263}\label{class_number_aa1974579013d5efce145318b0f8ad263}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries texture}
+\item 
+\mbox{\Hypertarget{class_number_a45a19003fccecadb5fc6ccde85c33614}\label{class_number_a45a19003fccecadb5fc6ccde85c33614}} 
+int {\bfseries width}
+\item 
+\mbox{\Hypertarget{class_number_a0f750bcb941b5b09475ca60520e71219}\label{class_number_a0f750bcb941b5b09475ca60520e71219}} 
+int {\bfseries height}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An object that represents the value of an entry, stores the text representation of the number ready to be rendered to the screen. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_number_a71535e7441ba8c8880eaf9bbc9823783}\label{class_number_a71535e7441ba8c8880eaf9bbc9823783}} 
+\index{Number@{Number}!render@{render}}
+\index{render@{render}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Number\+::render (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Rect}]{bounding\+Box }\end{DoxyParamCaption})}
+
+
+
+Renders the number to the screen in the position of the respective entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bounding\+Box} & Is the entries box so that the text representation of the number can be rendered in the correct position on the screen. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/number.\+h\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/number.\+cpp\end{DoxyCompactItemize}

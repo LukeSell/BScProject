@@ -1,0 +1,87 @@
+\hypertarget{class_sudoku}{}\doxysection{Sudoku Class Reference}
+\label{class_sudoku}\index{Sudoku@{Sudoku}}
+
+
+The object representing the sudoku screen.  
+
+
+
+
+{\ttfamily \#include $<$sudoku.\+h$>$}
+
+Inheritance diagram for Sudoku\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sudoku}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sudoku_ad2c3236b8aa9acaf36dffb99547589d5}{handle\+Event}} (S\+D\+L\+\_\+\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Handles any user input on this screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sudoku_a0ac96d5e690c900a01910bbcf2548b61}\label{class_sudoku_a0ac96d5e690c900a01910bbcf2548b61}} 
+static \mbox{\hyperlink{class_sudoku}{Sudoku}} $\ast$ {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sudoku_a45bc7c77968e2d57e594354d3158a8bf}\label{class_sudoku_a45bc7c77968e2d57e594354d3158a8bf}} 
+enum \mbox{\hyperlink{class_sudoku_a45bc7c77968e2d57e594354d3158a8bf}{Action}} \{ \newline
+{\bfseries none}, 
+{\bfseries back\+Menu}, 
+{\bfseries solve}, 
+{\bfseries generate\+Sudoku}, 
+\newline
+{\bfseries load}, 
+{\bfseries save}, 
+{\bfseries benchmark}
+ \}
+\begin{DoxyCompactList}\small\item\em The G\+UI actions that can be taken by the user on this screen, in this case buttons that can be clicked and the sudoku grid that can be interacted with. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sudoku_abbf093d6f28d5a8e3a3afe0d42cda7cd}\label{class_sudoku_abbf093d6f28d5a8e3a3afe0d42cda7cd}} 
+{\bfseries Sudoku} (std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{class_g_u_i_component}{G\+U\+I\+Component}} $\ast$ $>$ c)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sudoku_a31c7caec9fdb72b954412dff38dcf767}\label{class_sudoku_a31c7caec9fdb72b954412dff38dcf767}} 
+static \mbox{\hyperlink{class_sudoku}{Sudoku}} $\ast$ {\bfseries sudoku} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The object representing the sudoku screen. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sudoku_ad2c3236b8aa9acaf36dffb99547589d5}\label{class_sudoku_ad2c3236b8aa9acaf36dffb99547589d5}} 
+\index{Sudoku@{Sudoku}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily void Sudoku\+::handle\+Event (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles any user input on this screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Is the user input event to be handled. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_screen_a76ba1b30cdca15061145aa8cd6c8595d}{Screen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/sudoku.\+h\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/sudoku.\+cpp\end{DoxyCompactItemize}

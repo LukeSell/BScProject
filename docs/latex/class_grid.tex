@@ -1,0 +1,236 @@
+\hypertarget{class_grid}{}\doxysection{Grid Class Reference}
+\label{class_grid}\index{Grid@{Grid}}
+
+
+Object that represents the \mbox{\hyperlink{class_sudoku}{Sudoku}} grid.  
+
+
+
+
+{\ttfamily \#include $<$grid.\+h$>$}
+
+Inheritance diagram for Grid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_grid}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grid_a928d54e68762b4a58714fa7278570c94}\label{class_grid_a928d54e68762b4a58714fa7278570c94}} 
+void \mbox{\hyperlink{class_grid_a928d54e68762b4a58714fa7278570c94}{init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the \mbox{\hyperlink{class_sudoku}{Sudoku}} grid into the relevant data structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grid_a764e71f6b24ca860de7393494022c720}\label{class_grid_a764e71f6b24ca860de7393494022c720}} 
+bool {\bfseries is\+Inited} ()
+\item 
+\mbox{\Hypertarget{class_grid_af1c9384933bc7bd2a99ee75016cc45b1}\label{class_grid_af1c9384933bc7bd2a99ee75016cc45b1}} 
+void \mbox{\hyperlink{class_grid_af1c9384933bc7bd2a99ee75016cc45b1}{clear\+Grid}} ()
+\begin{DoxyCompactList}\small\item\em Sets all squares on the grid as empty. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_grid_aff03ed24160a1f3f1a87e180047db333}{handle\+Event}} (S\+D\+L\+\_\+\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Handles events to select squares and modify them. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grid_aa4b8977d51600176436149b66dcd2791}\label{class_grid_aa4b8977d51600176436149b66dcd2791}} 
+void \mbox{\hyperlink{class_grid_aa4b8977d51600176436149b66dcd2791}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the grid, which is composed of entries, the selected square and the lines between squares. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_grid_accae100195c3619e0ea3c840875e800a}{is\+Conflicts}} (int n)
+\begin{DoxyCompactList}\small\item\em Tests if the grid is valid when compared against the constraints of \mbox{\hyperlink{class_sudoku}{Sudoku}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_grid_a8add66ea659b2183d2f97afec87216cc}{solve}} (const int n=0)
+\begin{DoxyCompactList}\small\item\em Attempts to solve the \mbox{\hyperlink{class_sudoku}{Sudoku}}, using a backtracking, recursive search. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_grid_a38558dd6270c3ff91eb3ea78b394d011}{is\+Not\+Unique}} (const int n, int $\ast$counter\+Solutions)
+\begin{DoxyCompactList}\small\item\em Tests if the current grid has more than one solution. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_grid_a24845a47bb875caa5fc86bb73ad93474}{is\+Not\+Unique}} ()
+\begin{DoxyCompactList}\small\item\em Calls the recursive method with arguments. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_grid_a9f01bfd32ddb43091feeec8aa321b0cc}{generates}} (const int depth, const std\+::vector$<$ int $>$ \&w)
+\begin{DoxyCompactList}\small\item\em Generates a new \mbox{\hyperlink{class_sudoku}{Sudoku}} by randomly solving an empty grid and then randomly removing numbers while keeping the solution to the grid unique. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_grid_adbd07563e2573b85b7a269db39f0e076}{generates}} ()
+\begin{DoxyCompactList}\small\item\em Readies the grid for generating by clearing it and randomly solving it, before passing the arguments to the recursive generating method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grid_a90a5ad4c882b1030d19bbbe1a5816965}\label{class_grid_a90a5ad4c882b1030d19bbbe1a5816965}} 
+void \mbox{\hyperlink{class_grid_a90a5ad4c882b1030d19bbbe1a5816965}{load}} ()
+\begin{DoxyCompactList}\small\item\em Loads a \mbox{\hyperlink{class_sudoku}{Sudoku}} grid from a save file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grid_aa79aa4b196476132781487f2a4ae445a}\label{class_grid_aa79aa4b196476132781487f2a4ae445a}} 
+void \mbox{\hyperlink{class_grid_aa79aa4b196476132781487f2a4ae445a}{save}} ()
+\begin{DoxyCompactList}\small\item\em Saves a \mbox{\hyperlink{class_sudoku}{Sudoku}} grid to a save file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grid_a77363adaf7c4e0ad353d1c6a1a0dac75}\label{class_grid_a77363adaf7c4e0ad353d1c6a1a0dac75}} 
+void \mbox{\hyperlink{class_grid_a77363adaf7c4e0ad353d1c6a1a0dac75}{benchmark}} ()
+\begin{DoxyCompactList}\small\item\em Benchmarks the \mbox{\hyperlink{class_sudoku}{Sudoku}} solving algorithm and saves the times to a log file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grid_ad7f300930e6c854536696431840471c1}\label{class_grid_ad7f300930e6c854536696431840471c1}} 
+static \mbox{\hyperlink{class_grid}{Grid}} $\ast$ {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grid_a35afd5b03057e6b27b8f17ddfb9cf27b}\label{class_grid_a35afd5b03057e6b27b8f17ddfb9cf27b}} 
+int {\bfseries box\+Size}
+\item 
+\mbox{\Hypertarget{class_grid_a7037fa89fa87cbe74b87bcd64137bd11}\label{class_grid_a7037fa89fa87cbe74b87bcd64137bd11}} 
+int {\bfseries unit\+Size}
+\item 
+\mbox{\Hypertarget{class_grid_aba1d030a62028019ee7f5f298a2a4093}\label{class_grid_aba1d030a62028019ee7f5f298a2a4093}} 
+int {\bfseries boxes\+Size}
+\item 
+\mbox{\Hypertarget{class_grid_a2f82a7d9200db023544756d70d738efe}\label{class_grid_a2f82a7d9200db023544756d70d738efe}} 
+int {\bfseries grid\+Size}
+\item 
+\mbox{\Hypertarget{class_grid_a1a8be99d322c2513453a53402d77b45d}\label{class_grid_a1a8be99d322c2513453a53402d77b45d}} 
+int {\bfseries bounding\+Box\+Size}
+\item 
+\mbox{\Hypertarget{class_grid_a16478b63da75d0f0fa5619816f18ed64}\label{class_grid_a16478b63da75d0f0fa5619816f18ed64}} 
+std\+::vector$<$ int $>$ {\bfseries v}
+\item 
+\mbox{\Hypertarget{class_grid_a1be6f94eff359299061abc4904fdbed0}\label{class_grid_a1be6f94eff359299061abc4904fdbed0}} 
+std\+::random\+\_\+device {\bfseries rd}
+\item 
+\mbox{\Hypertarget{class_grid_a6efab565d4214eec2db49c74973fd84b}\label{class_grid_a6efab565d4214eec2db49c74973fd84b}} 
+std\+::default\+\_\+random\+\_\+engine {\bfseries rng}
+\item 
+\mbox{\Hypertarget{class_grid_a845a94a424cbdbfc877ced8311acff07}\label{class_grid_a845a94a424cbdbfc877ced8311acff07}} 
+bool {\bfseries inited}
+\item 
+\mbox{\Hypertarget{class_grid_ab5bf5873caf3c65e9b131615bd7d51f0}\label{class_grid_ab5bf5873caf3c65e9b131615bd7d51f0}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_grid_entry}{Grid\+Entry}} $>$ $>$ {\bfseries grids}
+\item 
+\mbox{\Hypertarget{class_grid_a9bdf77eff4d5003329e436987e42b8e9}\label{class_grid_a9bdf77eff4d5003329e436987e42b8e9}} 
+std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{class_grid_entry}{Grid\+Entry}} $>$ {\bfseries selected}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grid_a1ae5e27673cc857b99504d723e8c846d}\label{class_grid_a1ae5e27673cc857b99504d723e8c846d}} 
+static \mbox{\hyperlink{class_grid}{Grid}} $\ast$ {\bfseries grid} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Object that represents the \mbox{\hyperlink{class_sudoku}{Sudoku}} grid. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_grid_adbd07563e2573b85b7a269db39f0e076}\label{class_grid_adbd07563e2573b85b7a269db39f0e076}} 
+\index{Grid@{Grid}!generates@{generates}}
+\index{generates@{generates}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{generates()}{generates()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Grid\+::generates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Readies the grid for generating by clearing it and randomly solving it, before passing the arguments to the recursive generating method. 
+
+\begin{DoxyReturn}{Returns}
+True if a \mbox{\hyperlink{class_sudoku}{Sudoku}} of depth 50 could be generated, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_grid_a9f01bfd32ddb43091feeec8aa321b0cc}\label{class_grid_a9f01bfd32ddb43091feeec8aa321b0cc}} 
+\index{Grid@{Grid}!generates@{generates}}
+\index{generates@{generates}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{generates()}{generates()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Grid\+::generates (\begin{DoxyParamCaption}\item[{const int}]{depth,  }\item[{const std\+::vector$<$ int $>$ \&}]{w }\end{DoxyParamCaption})}
+
+
+
+Generates a new \mbox{\hyperlink{class_sudoku}{Sudoku}} by randomly solving an empty grid and then randomly removing numbers while keeping the solution to the grid unique. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em depth} & Is the current amount of squares made empty. \\
+\hline
+{\em w} & Is the indexes of squares to try and make empty. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a \mbox{\hyperlink{class_sudoku}{Sudoku}} of depth 50 could be generated, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_grid_aff03ed24160a1f3f1a87e180047db333}\label{class_grid_aff03ed24160a1f3f1a87e180047db333}} 
+\index{Grid@{Grid}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily int Grid\+::handle\+Event (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles events to select squares and modify them. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Is the user event to be handled. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_g_u_i_component_adae72b8717b1fe01143210b7512dd348}{G\+U\+I\+Component}}.
+
+\mbox{\Hypertarget{class_grid_accae100195c3619e0ea3c840875e800a}\label{class_grid_accae100195c3619e0ea3c840875e800a}} 
+\index{Grid@{Grid}!isConflicts@{isConflicts}}
+\index{isConflicts@{isConflicts}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{isConflicts()}{isConflicts()}}
+{\footnotesize\ttfamily bool Grid\+::is\+Conflicts (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Tests if the grid is valid when compared against the constraints of \mbox{\hyperlink{class_sudoku}{Sudoku}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Is the index of the square to check the constraints of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the constraints have been invalidated, otherwise false if the grid is valid. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_grid_a24845a47bb875caa5fc86bb73ad93474}\label{class_grid_a24845a47bb875caa5fc86bb73ad93474}} 
+\index{Grid@{Grid}!isNotUnique@{isNotUnique}}
+\index{isNotUnique@{isNotUnique}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{isNotUnique()}{isNotUnique()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Grid\+::is\+Not\+Unique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calls the recursive method with arguments. 
+
+\begin{DoxyReturn}{Returns}
+True if the grid has more than one solution, false if the grid has a unique solution. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_grid_a38558dd6270c3ff91eb3ea78b394d011}\label{class_grid_a38558dd6270c3ff91eb3ea78b394d011}} 
+\index{Grid@{Grid}!isNotUnique@{isNotUnique}}
+\index{isNotUnique@{isNotUnique}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{isNotUnique()}{isNotUnique()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Grid\+::is\+Not\+Unique (\begin{DoxyParamCaption}\item[{const int}]{n,  }\item[{int $\ast$}]{counter\+Solutions }\end{DoxyParamCaption})}
+
+
+
+Tests if the current grid has more than one solution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Is the next index, which refers to the next square in the grid. \\
+\hline
+{\em counter\+Solutions} & Counts the number of solutions found so far. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the grid has more than one solution, false if the grid has a unique solution. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_grid_a8add66ea659b2183d2f97afec87216cc}\label{class_grid_a8add66ea659b2183d2f97afec87216cc}} 
+\index{Grid@{Grid}!solve@{solve}}
+\index{solve@{solve}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily bool Grid\+::solve (\begin{DoxyParamCaption}\item[{const int}]{n = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Attempts to solve the \mbox{\hyperlink{class_sudoku}{Sudoku}}, using a backtracking, recursive search. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Is the next index, which refers to the next square in the grid. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the \mbox{\hyperlink{class_sudoku}{Sudoku}} has been solved, false if it cannot be solved. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/grid.\+h\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/grid.\+cpp\end{DoxyCompactItemize}

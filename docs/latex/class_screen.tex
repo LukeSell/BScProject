@@ -1,0 +1,71 @@
+\hypertarget{class_screen}{}\doxysection{Screen Class Reference}
+\label{class_screen}\index{Screen@{Screen}}
+
+
+The object that is a base class for all screens.  
+
+
+
+
+{\ttfamily \#include $<$screen.\+h$>$}
+
+Inheritance diagram for Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_screen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_screen_a819aa32ece0c9bf2b173e747d8713c0b}\label{class_screen_a819aa32ece0c9bf2b173e747d8713c0b}} 
+void \mbox{\hyperlink{class_screen_a819aa32ece0c9bf2b173e747d8713c0b}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders all G\+UI components onto the screen. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_screen_a76ba1b30cdca15061145aa8cd6c8595d}{handle\+Event}} (S\+D\+L\+\_\+\+Event $\ast$event)=0
+\begin{DoxyCompactList}\small\item\em The sub class must implement a method to handle user input events on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_screen_adff9bd9e1c2689b4067073f802b778bb}\label{class_screen_adff9bd9e1c2689b4067073f802b778bb}} 
+{\bfseries Screen} (std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{class_g_u_i_component}{G\+U\+I\+Component}} $\ast$ $>$ c)
+\item 
+\mbox{\Hypertarget{class_screen_a034b20195c9270d3c50865a27eb795c5}\label{class_screen_a034b20195c9270d3c50865a27eb795c5}} 
+std\+::forward\+\_\+list$<$ \mbox{\hyperlink{class_g_u_i_component}{G\+U\+I\+Component}} $\ast$ $>$ {\bfseries get\+Components} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_screen_ac1c59b1d595ecafb03139259f7952e87}\label{class_screen_ac1c59b1d595ecafb03139259f7952e87}} 
+std\+::forward\+\_\+list$<$ \mbox{\hyperlink{class_g_u_i_component}{G\+U\+I\+Component}} $\ast$ $>$ {\bfseries components}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The object that is a base class for all screens. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_screen_a76ba1b30cdca15061145aa8cd6c8595d}\label{class_screen_a76ba1b30cdca15061145aa8cd6c8595d}} 
+\index{Screen@{Screen}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily virtual void Screen\+::handle\+Event (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The sub class must implement a method to handle user input events on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Is the user input event to be handled. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_eight_queens_a8f6011d213b9bb79662c66f212b26437}{Eight\+Queens}}, \mbox{\hyperlink{class_sudoku_ad2c3236b8aa9acaf36dffb99547589d5}{Sudoku}}, and \mbox{\hyperlink{class_menu_add49fdd2d51a0b8ea24c7b636ca3a9d6}{Menu}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/screen.\+h\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/screen.\+cpp\end{DoxyCompactItemize}

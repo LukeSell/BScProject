@@ -1,0 +1,93 @@
+\hypertarget{class_grid_eight_queens}{}\doxysection{Grid\+Eight\+Queens Class Reference}
+\label{class_grid_eight_queens}\index{GridEightQueens@{GridEightQueens}}
+
+
+Object that represent the chessboard for eight queens.  
+
+
+
+
+{\ttfamily \#include $<$grid\+\_\+eight\+\_\+queens.\+h$>$}
+
+Inheritance diagram for Grid\+Eight\+Queens\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_grid_eight_queens}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grid_eight_queens_a5c2571401e13846c4de67e10ac8321cd}\label{class_grid_eight_queens_a5c2571401e13846c4de67e10ac8321cd}} 
+void \mbox{\hyperlink{class_grid_eight_queens_a5c2571401e13846c4de67e10ac8321cd}{load}} ()
+\begin{DoxyCompactList}\small\item\em Loads the initial state of the chessboard. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grid_eight_queens_ade4a0a18a0bec8eca71038152057065f}\label{class_grid_eight_queens_ade4a0a18a0bec8eca71038152057065f}} 
+void \mbox{\hyperlink{class_grid_eight_queens_ade4a0a18a0bec8eca71038152057065f}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the chessboard with Queens as ones. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_grid_eight_queens_ac16da93080ce6cbc58a2c24ad996fa71}{is\+Conflicts}} ()
+\begin{DoxyCompactList}\small\item\em Tests if any Queens can attack each other. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_grid_eight_queens_a6887afda88fc8258640a0a34a137a024}{solve}} (const int n, const int counter\+Queens)
+\begin{DoxyCompactList}\small\item\em Attempts to solve the eight queens problem, by placing eight queens on a chessboard, so that no queen can attack another queen, using a backtracking, recursive search. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grid_eight_queens_a307cc5052674e305aee5a8336d90a23d}\label{class_grid_eight_queens_a307cc5052674e305aee5a8336d90a23d}} 
+static \mbox{\hyperlink{class_grid_eight_queens}{Grid\+Eight\+Queens}} $\ast$ {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grid_eight_queens_a2daeda6fb68cb0ebf6eb63222bf3a3c2}\label{class_grid_eight_queens_a2daeda6fb68cb0ebf6eb63222bf3a3c2}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_grid_entry}{Grid\+Entry}} $>$ {\bfseries grids} \mbox{[}8\mbox{]}\mbox{[}8\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grid_eight_queens_ab4918064395a342fbca14aa5e42009d2}\label{class_grid_eight_queens_ab4918064395a342fbca14aa5e42009d2}} 
+static \mbox{\hyperlink{class_grid_eight_queens}{Grid\+Eight\+Queens}} $\ast$ {\bfseries grid\+Eight\+Queens} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Object that represent the chessboard for eight queens. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_grid_eight_queens_ac16da93080ce6cbc58a2c24ad996fa71}\label{class_grid_eight_queens_ac16da93080ce6cbc58a2c24ad996fa71}} 
+\index{GridEightQueens@{GridEightQueens}!isConflicts@{isConflicts}}
+\index{isConflicts@{isConflicts}!GridEightQueens@{GridEightQueens}}
+\doxysubsubsection{\texorpdfstring{isConflicts()}{isConflicts()}}
+{\footnotesize\ttfamily bool Grid\+Eight\+Queens\+::is\+Conflicts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests if any Queens can attack each other. 
+
+\begin{DoxyReturn}{Returns}
+True if a Queen can attack another Queen. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_grid_eight_queens_a6887afda88fc8258640a0a34a137a024}\label{class_grid_eight_queens_a6887afda88fc8258640a0a34a137a024}} 
+\index{GridEightQueens@{GridEightQueens}!solve@{solve}}
+\index{solve@{solve}!GridEightQueens@{GridEightQueens}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily bool Grid\+Eight\+Queens\+::solve (\begin{DoxyParamCaption}\item[{const int}]{n,  }\item[{const int}]{counter\+Queens }\end{DoxyParamCaption})}
+
+
+
+Attempts to solve the eight queens problem, by placing eight queens on a chessboard, so that no queen can attack another queen, using a backtracking, recursive search. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Is the next index, which refers to the next square on the chessboard. \\
+\hline
+{\em counter\+Queens} & Is the amount of Queens currently placed on the chessboard. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the eight queens problem has been solved, false if it cannot. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/grid\+\_\+eight\+\_\+queens.\+h\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/grid\+\_\+eight\+\_\+queens.\+cpp\end{DoxyCompactItemize}

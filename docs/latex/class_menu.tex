@@ -1,0 +1,86 @@
+\hypertarget{class_menu}{}\doxysection{Menu Class Reference}
+\label{class_menu}\index{Menu@{Menu}}
+
+
+The object representing the main menu screen.  
+
+
+
+
+{\ttfamily \#include $<$menu.\+h$>$}
+
+Inheritance diagram for Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_menu}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_menu_add49fdd2d51a0b8ea24c7b636ca3a9d6}{handle\+Event}} (S\+D\+L\+\_\+\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Handles any user input on this screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_a386ec521e9120666b3d436f3c1116ee8}\label{class_menu_a386ec521e9120666b3d436f3c1116ee8}} 
+static \mbox{\hyperlink{class_menu}{Menu}} $\ast$ {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_a0cd5e57d69c4984f3e12a6938c27386e}\label{class_menu_a0cd5e57d69c4984f3e12a6938c27386e}} 
+enum \mbox{\hyperlink{class_menu_a0cd5e57d69c4984f3e12a6938c27386e}{Action}} \{ \newline
+{\bfseries continue\+Game}, 
+{\bfseries load\+Game}, 
+{\bfseries settings}, 
+{\bfseries new\+Game}, 
+\newline
+{\bfseries eight\+Queens}, 
+{\bfseries quit}
+ \}
+\begin{DoxyCompactList}\small\item\em The G\+UI actions that can be taken by the user on this screen, in this case buttons that can be clicked. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_a0c3fcff75ceb6b4ee3839fafbb91e8d8}\label{class_menu_a0c3fcff75ceb6b4ee3839fafbb91e8d8}} 
+{\bfseries Menu} (std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{class_g_u_i_component}{G\+U\+I\+Component}} $\ast$ $>$ c)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_a45ea2145895c08c66d88ebd6d65758dc}\label{class_menu_a45ea2145895c08c66d88ebd6d65758dc}} 
+static \mbox{\hyperlink{class_menu}{Menu}} $\ast$ {\bfseries menu} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The object representing the main menu screen. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_menu_add49fdd2d51a0b8ea24c7b636ca3a9d6}\label{class_menu_add49fdd2d51a0b8ea24c7b636ca3a9d6}} 
+\index{Menu@{Menu}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily void Menu\+::handle\+Event (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles any user input on this screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Is the user input event to be handled. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_screen_a76ba1b30cdca15061145aa8cd6c8595d}{Screen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/menu.\+h\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/menu.\+cpp\end{DoxyCompactItemize}

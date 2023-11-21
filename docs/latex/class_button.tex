@@ -1,0 +1,112 @@
+\hypertarget{class_button}{}\doxysection{Button Class Reference}
+\label{class_button}\index{Button@{Button}}
+
+
+Object that is used to create buttons to display and click on, so that the user may navigate and use the application.  
+
+
+
+
+{\ttfamily \#include $<$button.\+h$>$}
+
+Inheritance diagram for Button\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_button}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_button_af73208389118f807ce5a9243d9419667}{Button}} (const int x, const int y, const int a, const char $\ast$t)
+\begin{DoxyCompactList}\small\item\em Creates a button. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_button_a5c609b6a62df248da7a90c9e443b0efc}{handle\+Event}} (S\+D\+L\+\_\+\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Handles any button clicks, by checking if the button has been clicked and then returning the action to be performed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_button_add4daea65a908027aa5a1593305b9656}\label{class_button_add4daea65a908027aa5a1593305b9656}} 
+void \mbox{\hyperlink{class_button_add4daea65a908027aa5a1593305b9656}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the button to the screen by first drawing a box for the button and then drawing the buttons text on top. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_button_accb58517a21757e21a397976a52bd570}\label{class_button_accb58517a21757e21a397976a52bd570}} 
+S\+D\+L\+\_\+\+Rect {\bfseries bounding\+Box}
+\item 
+\mbox{\Hypertarget{class_button_a55a182cecd75a1e64020a30c756f3100}\label{class_button_a55a182cecd75a1e64020a30c756f3100}} 
+S\+D\+L\+\_\+\+Rect {\bfseries temp\+Bounding\+Box}
+\item 
+\mbox{\Hypertarget{class_button_a33bdccbb15d57c939a3d0e027f7f9d16}\label{class_button_a33bdccbb15d57c939a3d0e027f7f9d16}} 
+S\+D\+L\+\_\+\+Rect {\bfseries centre\+Bounding\+Box}
+\item 
+\mbox{\Hypertarget{class_button_a22ebec1065d0ab63793393bc7def7633}\label{class_button_a22ebec1065d0ab63793393bc7def7633}} 
+int {\bfseries action}
+\item 
+\mbox{\Hypertarget{class_button_a63be2602c7e7ca11f8daf4279c618469}\label{class_button_a63be2602c7e7ca11f8daf4279c618469}} 
+const char $\ast$ {\bfseries text}
+\item 
+\mbox{\Hypertarget{class_button_a1c27c26239642253718bdf32d7b325c6}\label{class_button_a1c27c26239642253718bdf32d7b325c6}} 
+S\+D\+L\+\_\+\+Surface $\ast$ {\bfseries surface}
+\item 
+\mbox{\Hypertarget{class_button_a0b4be5300889197f3e57e7b6530a8acc}\label{class_button_a0b4be5300889197f3e57e7b6530a8acc}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries texture}
+\item 
+\mbox{\Hypertarget{class_button_aa3e7c88c2d99b2f540032ec81f5b6757}\label{class_button_aa3e7c88c2d99b2f540032ec81f5b6757}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries temp\+Texture}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Object that is used to create buttons to display and click on, so that the user may navigate and use the application. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_button_af73208389118f807ce5a9243d9419667}\label{class_button_af73208389118f807ce5a9243d9419667}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{const int}]{x,  }\item[{const int}]{y,  }\item[{const int}]{a,  }\item[{const char $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Is the x position to draw on screen. \\
+\hline
+{\em y} & Is the y position to draw on screen. \\
+\hline
+{\em a} & Is the action the button does when clicked on. \\
+\hline
+{\em t} & Is the text the button displays. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_button_a5c609b6a62df248da7a90c9e443b0efc}\label{class_button_a5c609b6a62df248da7a90c9e443b0efc}} 
+\index{Button@{Button}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily int Button\+::handle\+Event (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles any button clicks, by checking if the button has been clicked and then returning the action to be performed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Is the user event that has happened. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is the action to be performed by the application. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_g_u_i_component_adae72b8717b1fe01143210b7512dd348}{G\+U\+I\+Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/button.\+h\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/button.\+cpp\end{DoxyCompactItemize}

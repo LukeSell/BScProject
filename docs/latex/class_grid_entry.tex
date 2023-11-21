@@ -1,0 +1,80 @@
+\hypertarget{class_grid_entry}{}\doxysection{Grid\+Entry Class Reference}
+\label{class_grid_entry}\index{GridEntry@{GridEntry}}
+
+
+An entry represents a square on the grid or chessboard, it handles rendering of the squares value, as well as any overlays that might be rendered on this square.  
+
+
+
+
+{\ttfamily \#include $<$grid\+\_\+entry.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grid_entry_af49035ee2aecbcbd2c1bb40ec0ccd867}\label{class_grid_entry_af49035ee2aecbcbd2c1bb40ec0ccd867}} 
+{\bfseries Grid\+Entry} (\mbox{\hyperlink{class_number}{Number}} $\ast$n, int r, int c, int b, bool l, S\+D\+L\+\_\+\+Rect bB)
+\item 
+\mbox{\Hypertarget{class_grid_entry_ab3665c739ce46bcde1d9d0aa04e5425b}\label{class_grid_entry_ab3665c739ce46bcde1d9d0aa04e5425b}} 
+bool {\bfseries operator$<$} (const \mbox{\hyperlink{class_grid_entry}{Grid\+Entry}} \&grid\+Entry)
+\item 
+\mbox{\Hypertarget{class_grid_entry_a45c14ea7dae78f36ac4bf0034b7259e1}\label{class_grid_entry_a45c14ea7dae78f36ac4bf0034b7259e1}} 
+void \mbox{\hyperlink{class_grid_entry_a45c14ea7dae78f36ac4bf0034b7259e1}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the squares value and if it is a locked square a grey overlay. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grid_entry_a04f65f73888305207d7a113ed9343bdd}\label{class_grid_entry_a04f65f73888305207d7a113ed9343bdd}} 
+void {\bfseries set\+Number} (const int n)
+\item 
+\mbox{\Hypertarget{class_grid_entry_a9c5b18f37e69d1199c4227b92800612c}\label{class_grid_entry_a9c5b18f37e69d1199c4227b92800612c}} 
+int {\bfseries get\+Number} ()
+\item 
+\mbox{\Hypertarget{class_grid_entry_a2f8b56d2e665d118427015b46e4eed97}\label{class_grid_entry_a2f8b56d2e665d118427015b46e4eed97}} 
+int {\bfseries get\+Row} ()
+\item 
+\mbox{\Hypertarget{class_grid_entry_a0020dd83db1727a58e5df02482641128}\label{class_grid_entry_a0020dd83db1727a58e5df02482641128}} 
+int {\bfseries get\+Column} ()
+\item 
+\mbox{\Hypertarget{class_grid_entry_ae3c162b59b50c10923848754972f1e7f}\label{class_grid_entry_ae3c162b59b50c10923848754972f1e7f}} 
+int {\bfseries get\+Box} ()
+\item 
+\mbox{\Hypertarget{class_grid_entry_a6781fd4fd464dd72ce431c1b33ed5c7e}\label{class_grid_entry_a6781fd4fd464dd72ce431c1b33ed5c7e}} 
+void {\bfseries set\+Locked} (const bool l)
+\item 
+\mbox{\Hypertarget{class_grid_entry_afeaa76b471e737c7115c6549ffea31cf}\label{class_grid_entry_afeaa76b471e737c7115c6549ffea31cf}} 
+bool {\bfseries is\+Locked} ()
+\item 
+\mbox{\Hypertarget{class_grid_entry_a1d42b47a4cd11dede61ae47566ca73e6}\label{class_grid_entry_a1d42b47a4cd11dede61ae47566ca73e6}} 
+S\+D\+L\+\_\+\+Rect $\ast$ {\bfseries get\+Bounding\+Box} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grid_entry_a56525b69d577d4cddb615a4538e22d60}\label{class_grid_entry_a56525b69d577d4cddb615a4538e22d60}} 
+\mbox{\hyperlink{class_number}{Number}} $\ast$ {\bfseries number}
+\item 
+\mbox{\Hypertarget{class_grid_entry_a2d1cd0c0a63602a36b89c1da3515c74e}\label{class_grid_entry_a2d1cd0c0a63602a36b89c1da3515c74e}} 
+int {\bfseries row}
+\item 
+\mbox{\Hypertarget{class_grid_entry_afc27df898a1c634d0cc6d7e892f048b4}\label{class_grid_entry_afc27df898a1c634d0cc6d7e892f048b4}} 
+int {\bfseries column}
+\item 
+\mbox{\Hypertarget{class_grid_entry_a125c564a69f7018d5c2e77f461a213b5}\label{class_grid_entry_a125c564a69f7018d5c2e77f461a213b5}} 
+int {\bfseries box}
+\item 
+\mbox{\Hypertarget{class_grid_entry_a750a17bfb16c522fef2cf0be5936bcb8}\label{class_grid_entry_a750a17bfb16c522fef2cf0be5936bcb8}} 
+bool {\bfseries locked}
+\item 
+\mbox{\Hypertarget{class_grid_entry_a5835c1330287fa9ea872ca445beb0c44}\label{class_grid_entry_a5835c1330287fa9ea872ca445beb0c44}} 
+S\+D\+L\+\_\+\+Rect {\bfseries bounding\+Box}
+\item 
+\mbox{\Hypertarget{class_grid_entry_a0c88dfc6302e6ee027ba6abb93c0e4c0}\label{class_grid_entry_a0c88dfc6302e6ee027ba6abb93c0e4c0}} 
+int {\bfseries count\+Possible\+Values}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An entry represents a square on the grid or chessboard, it handles rendering of the squares value, as well as any overlays that might be rendered on this square. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/grid\+\_\+entry.\+h\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/grid\+\_\+entry.\+cpp\end{DoxyCompactItemize}

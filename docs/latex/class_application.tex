@@ -1,0 +1,110 @@
+\hypertarget{class_application}{}\doxysection{Application Class Reference}
+\label{class_application}\index{Application@{Application}}
+
+
+Singleton object that handles all parts of running the program, these are rendering, handling events and cleaning up when the program closes.  
+
+
+
+
+{\ttfamily \#include $<$application.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_application_a4ca6f0d88dec3dcbe7c082383a073dad}{init}} (int width, int height, Uint32 window\+\_\+flags)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+DL libraries and creates the window and renderer, as well as G\+UI buttons. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_a9ac99d97ee1cc814298a2f2388bde835}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders all G\+UI elements onto the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_application_a560aab587a90a1501eeee97160b09c3d}\label{class_application_a560aab587a90a1501eeee97160b09c3d}} 
+void \mbox{\hyperlink{class_application_a560aab587a90a1501eeee97160b09c3d}{handle\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Handles all user events, these are mouse clicks and key presses, used for buttons and sudoku. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_application_a80af1aa42c0d661f953c752c30f75424}\label{class_application_a80af1aa42c0d661f953c752c30f75424}} 
+void \mbox{\hyperlink{class_application_a80af1aa42c0d661f953c752c30f75424}{clean}} ()
+\begin{DoxyCompactList}\small\item\em Cleans up the application by freeing any allocated resources and exiting S\+DL subsystems. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_application_a80d434bef1c21be455cdb78de73271ba}\label{class_application_a80d434bef1c21be455cdb78de73271ba}} 
+S\+D\+L\+\_\+\+Renderer $\ast$ {\bfseries get\+Renderer} ()
+\item 
+\mbox{\Hypertarget{class_application_a2218942c79cde99813c1ac9eb52ff83c}\label{class_application_a2218942c79cde99813c1ac9eb52ff83c}} 
+T\+T\+F\+\_\+\+Font $\ast$ {\bfseries get\+Font} ()
+\item 
+\mbox{\Hypertarget{class_application_ad0110037a5d4b8ac3bb676332c46e1d1}\label{class_application_ad0110037a5d4b8ac3bb676332c46e1d1}} 
+bool {\bfseries is\+Running} ()
+\item 
+\mbox{\Hypertarget{class_application_adaf2aca7e5a8efa7d15a346c7a1e50ce}\label{class_application_adaf2aca7e5a8efa7d15a346c7a1e50ce}} 
+void {\bfseries set\+Running} (bool r)
+\item 
+\mbox{\Hypertarget{class_application_a7843d22e3d27f3367ce611c0480dae16}\label{class_application_a7843d22e3d27f3367ce611c0480dae16}} 
+void {\bfseries set\+Screen} (\mbox{\hyperlink{class_screen}{Screen}} $\ast$cS)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_application_a723b8bba6edce3769a8d771770ca10e1}\label{class_application_a723b8bba6edce3769a8d771770ca10e1}} 
+static \mbox{\hyperlink{class_application}{Application}} $\ast$ {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_application_a8bb84755dcfc99f71bd2504626179af2}\label{class_application_a8bb84755dcfc99f71bd2504626179af2}} 
+S\+D\+L\+\_\+\+Window $\ast$ {\bfseries window}
+\item 
+\mbox{\Hypertarget{class_application_add4c013a58de1820aa05c44ac1514c93}\label{class_application_add4c013a58de1820aa05c44ac1514c93}} 
+S\+D\+L\+\_\+\+Renderer $\ast$ {\bfseries renderer}
+\item 
+\mbox{\Hypertarget{class_application_a7c99bada3e60db05efaaabac9e65a12e}\label{class_application_a7c99bada3e60db05efaaabac9e65a12e}} 
+T\+T\+F\+\_\+\+Font $\ast$ {\bfseries font}
+\item 
+\mbox{\Hypertarget{class_application_a21e699718afc803b84e3801dc20d18a9}\label{class_application_a21e699718afc803b84e3801dc20d18a9}} 
+bool {\bfseries running}
+\item 
+\mbox{\Hypertarget{class_application_a7b13dc5cc93dac3c92903ba210c2e07e}\label{class_application_a7b13dc5cc93dac3c92903ba210c2e07e}} 
+\mbox{\hyperlink{class_screen}{Screen}} $\ast$ {\bfseries current\+Screen}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_application_afedf58e12ca39c44d9254374c83cdf8b}\label{class_application_afedf58e12ca39c44d9254374c83cdf8b}} 
+static \mbox{\hyperlink{class_application}{Application}} $\ast$ {\bfseries application} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton object that handles all parts of running the program, these are rendering, handling events and cleaning up when the program closes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_application_a4ca6f0d88dec3dcbe7c082383a073dad}\label{class_application_a4ca6f0d88dec3dcbe7c082383a073dad}} 
+\index{Application@{Application}!init@{init}}
+\index{init@{init}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Application\+::init (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{Uint32}]{window\+\_\+flags }\end{DoxyParamCaption})}
+
+
+
+Initializes the S\+DL libraries and creates the window and renderer, as well as G\+UI buttons. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Is the width of the window. \\
+\hline
+{\em height} & Is the height of the window. \\
+\hline
+{\em window\+\_\+flags} & Are any window flags that may be set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_application_a9ac99d97ee1cc814298a2f2388bde835}\label{class_application_a9ac99d97ee1cc814298a2f2388bde835}} 
+\index{Application@{Application}!render@{render}}
+\index{render@{render}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Application\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renders all G\+UI elements onto the window. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/application.\+h\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/application.\+cpp\end{DoxyCompactItemize}

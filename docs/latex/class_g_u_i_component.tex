@@ -1,0 +1,58 @@
+\hypertarget{class_g_u_i_component}{}\doxysection{G\+U\+I\+Component Class Reference}
+\label{class_g_u_i_component}\index{GUIComponent@{GUIComponent}}
+
+
+The object that is a base class for all G\+UI components.  
+
+
+
+
+{\ttfamily \#include $<$gui\+\_\+component.\+h$>$}
+
+Inheritance diagram for G\+U\+I\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_g_u_i_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_g_u_i_component_adae72b8717b1fe01143210b7512dd348}{handle\+Event}} (S\+D\+L\+\_\+\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Handles the user input event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_u_i_component_a5441d439671848a8640342a963394216}\label{class_g_u_i_component_a5441d439671848a8640342a963394216}} 
+virtual void \mbox{\hyperlink{class_g_u_i_component_a5441d439671848a8640342a963394216}{render}} ()=0
+\begin{DoxyCompactList}\small\item\em The sub class must implement a method to render the G\+UI components on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The object that is a base class for all G\+UI components. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_g_u_i_component_adae72b8717b1fe01143210b7512dd348}\label{class_g_u_i_component_adae72b8717b1fe01143210b7512dd348}} 
+\index{GUIComponent@{GUIComponent}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!GUIComponent@{GUIComponent}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily virtual int G\+U\+I\+Component\+::handle\+Event (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Handles the user input event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Is a user input event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No action to be taken if the sub class does not override the base class method. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_grid_aff03ed24160a1f3f1a87e180047db333}{Grid}}, and \mbox{\hyperlink{class_button_a5c609b6a62df248da7a90c9e443b0efc}{Button}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Luke/\+Documents/\+Git\+Hub/\+Full\+Unit\+\_\+1920\+\_\+\+Luke\+Sell/src/sudoku/gui\+\_\+component.\+h\end{DoxyCompactItemize}
